@@ -1,0 +1,48 @@
+.logo {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.font-28s {
+  font-size:28rpx;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  line-height:34rpx;
+}
+.font-40s {
+  font-size:40rpx;
+  font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  line-height:56rpx;
+}
+.font-48s {
+  font-size:48rpx;
+  font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:#222222;
+  line-height:58rpx;
+}
+.color-666666 {
+  color: #666666;
+}
+.color-888888 {
+  color: #888888;
+}
+.blue {
+  color: #04A7FF;
+}
+
+.white-block {
+  padding: 0rpx 40rpx;
+  background: #ffffff;
+}
+.white-block .item {
+  padding: 62rpx 0rpx 32rpx;
+  border-bottom: 1rpx solid rgba(238,238,238,1);
+}
+
+textarea {
+  height: 150rpx;
+}

@@ -1,0 +1,26 @@
+<view class='navigator-line'></view>
+
+<!-- unauthorized：未授权 -->
+<view class='' wx:if='{{pageStatus=="unauthorized"}}'>
+  <view class='center' style='margin-top:60rpx;'>
+    <text>登录后即可继续操作</text>
+  </view>
+  <view class='center' style='margin-top:60rpx;'>
+    <button class='btn-submit ' style='background:rgba(24,174,22,1);border-radius:10rpx;' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权微信后登录</button>
+  </view>
+</view>
+
+<!-- authorized：已授权 -->
+<view class='' wx:if='{{pageStatus=="authorized"}}' style='font-size:24rpx;'>
+  <text>登录凭证(js_code):</text>
+  <textarea value='{{js_code}}'></textarea>
+  <text>加密数据(encryptedData):</text>
+  <textarea value='{{encryptedData}}'></textarea>
+  <text>初始向量(iv):</text>
+  <textarea value='{{iv}}'></textarea>
+  <view class='center' style='margin-top:88rpx;'>
+    <button class='btn-submit '  style='background:rgba(24,174,22,1);border-radius:10rpx;' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" bindtap='checkCode'>
+     获取加密数据
+    </button>
+  </view>
+</view>
